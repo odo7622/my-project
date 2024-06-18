@@ -76,6 +76,16 @@ body {
       font-size: 0.625rem;
     }
   }
+
+  .explanation2 {
+    margin-inline: 1.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    unicode-bidi: isolate;
+    @media (width <= 27.9375rem) {
+      font-size: 0.625rem;
+    }
+  }
 }
 
 .main {
