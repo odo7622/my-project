@@ -4,8 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my project</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/script.js" defer></script>
   </head>
   <body>
-    my project
+    <div class="section">
+      <div class="container navigation">
+        <div class="navigation__wrapper">
+          <ul class="menu menu--pos-left">
+            <div>DAWON PORTFOLIO</div>
+          </ul>
+          <ul class="menu menu--pos-right">
+            <li>
+              <a href="#aboutme" class="menu__item">ABOUT ME</a>
+            </li>
+            <li><a href="#skills" class="menu__item">SKILLS</a></li>
+            <li>
+              <a href="#projects" class="menu__item">PROJECTS</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="firstgreeting">Welcome <br />to my homepage<br /></div>
+      <div class="container main">
+        <div id="aboutme">ABOUT ME</div>
+        <div class="main main-aboutme">
+          <div class="main-aboutme__left">
+            <div class="main-aboutme__left__img">
+              <img style="width: 53%" src="./assets/dawonpicture2.png" alt="" />
+            </div>
+            <div style="font-size: 30px; font-weight: 700; margin-top: 40px">
+              오다원
+            </div>
+            <div class="main-aboutme__left__solid"></div>
+            <div class="main-aboutme__left__bottom">
+              상명대학교 커뮤니케이션디자인전공
+            </div>
+            <div class="main-aboutme__left__logo">
+              <a class="img1" href="https://www.instagram.com/5o_18th/"
+                ><img src="./assets/insta.png" alt=""
+              /></a>
+              <a class="img2" href="https://blog.naver.com/odo7622"
+                ><img src="./assets/blog2.png" alt=""
+              /></a>
+              <a class="img3" href="https://open.kakao.com/o/sj13vVxg"
+                ><img src="./assets/katalk.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="main-aboutme__right">
+            <div class="main-aboutme__right__hello">Hello</div>
+            <div class="main-aboutme__right__name1">이름</div>
+            <div class="main-aboutme__right__name2">오다원</div>
+            <div class="main-aboutme__right__birth1">출생</div>
+            <div class="main-aboutme__right__birth2">2004.05.18</div>
+            <div class="main-aboutme__right__address1">주소</div>
+            <div class="main-aboutme__right__address2">
+              충남 아산시 어의정로 92-7
+            </div>
+            <div class="main-aboutme__right__education1">학력</div>
+            <div class="main-aboutme__right__education2">용화초등학교 졸업</div>
+            <div class="main-aboutme__right__education3">용화중학교 졸업</div>
+            <div class="main-aboutme__right__education4">용화고등학교 졸업</div>
+            <div class="main-aboutme__right__education5">상명대학교 재학</div>
+            <div class="main-aboutme__right__certificate1">자격증</div>
+            <div class="main-aboutme__right__certificate2">GTQ 포토샵 1급</div>
+            <div class="main-aboutme__right__certificate3">
+              운전면허 2종 보통
+            </div>
+          </div>
+        </div>
+        <div id="skills">SKILLS</div>
+        <div class="main main__skills">
+          <div class="item"><img src="./assets/photoshop.png" alt="" /></div>
+          <div>
+            <progress value="60" max="100"></progress>
+          </div>
+          <div class="item"><img src="./assets/illustrator.png" alt="" /></div>
+          <div>
+            <progress value="85" max="100"></progress>
+          </div>
+          <div class="item"><img src="./assets/aftereffects.png" alt="" /></div>
+          <div>
+            <progress value="70" max="100"></progress>
+          </div>
+          <div class="item">
+            <img src="./assets/visualstudio.png" alt="" />
+          </div>
+          <div>
+            <progress value="50" max="100"></progress>
+          </div>
+        </div>
+        <div id="projects">PROJECTS</div>
+
+        <div class="main main__projects">
+          <div class="main__projects__folder1">
+            <img src="./assets/folder.png" alt="" />
+            <div class="overlay">
+              <p class="">관찰과 표현</p>
+            </div>
+          </div>
+          <div class="main__projects__folder2">
+            <img src="./assets/folder.png" alt="" />
+            <div class="overlay">
+              <p class="">기초디자인2</p>
+            </div>
+          </div>
+          <div class="main__projects__folder3">
+            <img src="./assets/folder.png" alt="" />
+            <div class="overlay">
+              <p class="">디지털미디어</p>
+            </div>
+          </div>
+
+          <div class="main__projects__folder4">
+            <img src="./assets/folder.png" alt="" />
+            <div class="overlay">
+              <p class="">비디오그래피</p>
+            </div>
+          </div>
+          <div class="main__projects__folder5">
+            <img src="./assets/folder.png" alt="" />
+            <div class="overlay">
+              <p class="">타이포그래피<br />기초</p>
+            </div>
+          </div>
+          <div class="main__projects__folder6">
+            <img src="./assets/folder.png" alt="" />
+            <div class="overlay">
+              <p class="">커뮤니케이션디자인<br />기초</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container footer">
+        <div class="footer__left">
+          <div>상명대학교 커뮤니케이션디자인전공</div>
+        </div>
+        <div class="footer__right">
+          <div>call</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
