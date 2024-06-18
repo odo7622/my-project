@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.back {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 1000;
+  padding: 0.625rem 1.25rem;
+  color: #fefaf4;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #675f53;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+}
+@media (width <= 62.5rem) {
+  .back {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+.back:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  background-color: #fefaf4;
+}
+
+.section {
+  max-width: 106.25rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  font-weight: 500;
+  color: #675f53;
+}
+
+.top {
+  padding: 16px 0;
+  text-align: center;
+}
+.top .subject h4 {
+  margin: 0;
+  margin-bottom: 1.875rem;
+  font-size: 5rem;
+  font-size: 6vw;
+  white-space: nowrap;
+  transform-origin: center;
+}
+.top .explanation {
+  margin-inline: 1.875rem;
+  margin-bottom: 1.25rem;
+  unicode-bidi: isolate;
+}
+@media (width <= 27.9375rem) {
+  .top .explanation {
+    font-size: 0.625rem;
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 28.125rem 28.125rem;
+  gap: 3.75rem;
+  place-items: center center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 6.25rem;
+}
+.main .project1 {
+  position: relative;
+  align-items: end;
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+  overflow: hidden;
+}
+.main .project1:hover .overlay {
+  font-size: 1.875rem;
+  color: #fefaf4;
+  opacity: 1;
+}
+.main .project2 {
+  position: relative;
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+  overflow: hidden;
+}
+.main .project2:hover .overlay {
+  font-size: 1.875rem;
+  color: #fefaf4;
+  text-align: center;
+  opacity: 1;
+}
+.main .project3 {
+  position: relative;
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+  overflow: hidden;
+}
+.main .project3:hover .overlay {
+  font-size: 1.875rem;
+  color: #fefaf4;
+  text-align: center;
+  opacity: 1;
+}
+.main .project4 {
+  position: relative;
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+  overflow: hidden;
+}
+.main .project4:hover .overlay {
+  font-size: 1.875rem;
+  color: #fefaf4;
+  text-align: center;
+  opacity: 1;
+}
+.main .project5 {
+  position: relative;
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+  overflow: hidden;
+}
+.main .project5:hover .overlay {
+  font-size: 1.875rem;
+  color: #fefaf4;
+  text-align: center;
+  opacity: 1;
+}
+.main .project6 {
+  position: relative;
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+  overflow: hidden;
+}
+.main .project6:hover .overlay {
+  font-size: 1.875rem;
+  color: #fefaf4;
+  text-align: center;
+  opacity: 1;
+}
+.main img {
+  width: 100%;
+  max-width: 28.125rem;
+  height: auto;
+}
+@media (width <= 62.5rem) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .main .project1,
+  .main .project2,
+  .main .project3,
+  .main .project4,
+  .main .project5,
+  .main .project6 {
+    grid-column: span 1;
+    max-width: 100%;
+    padding-inline: 1.875rem;
+  }
+}

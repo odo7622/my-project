@@ -1,0 +1,211 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.back {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 1000;
+  padding: 0.625rem 1.25rem;
+  color: #fefaf4;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #675f53;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.3125rem;
+  @media (width <= 62.5rem) {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  &:hover {
+    background: rgb(0 0 0 / 20%);
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  background-color: #fefaf4;
+}
+
+.section {
+  max-width: 106.25rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  font-weight: 500;
+  color: #675f53;
+}
+
+.top {
+  padding: 16px 0;
+  text-align: center;
+
+  .subject {
+    h4 {
+      margin: 0;
+      margin-bottom: 1.875rem;
+      font-size: 5rem;
+      font-size: 6vw;
+      white-space: nowrap;
+      transform-origin: center;
+    }
+  }
+
+  .explanation {
+    margin-inline: 1.875rem;
+    margin-bottom: 1.25rem;
+    unicode-bidi: isolate;
+    @media (width <= 27.9375rem) {
+      font-size: 0.625rem;
+    }
+  }
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 28.125rem 28.125rem;
+  gap: 3.75rem;
+  place-items: center center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 6.25rem;
+
+  .project1 {
+    position: relative;
+    align-items: end;
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        font-size: 1.875rem;
+        color: #fefaf4;
+        opacity: 1;
+      }
+    }
+  }
+
+  .project2 {
+    position: relative;
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        font-size: 1.875rem;
+        color: #fefaf4;
+        text-align: center;
+        opacity: 1;
+      }
+    }
+  }
+
+  .project3 {
+    position: relative;
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        font-size: 1.875rem;
+        color: #fefaf4;
+        text-align: center;
+        opacity: 1;
+      }
+    }
+  }
+
+  .project4 {
+    position: relative;
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        font-size: 1.875rem;
+        color: #fefaf4;
+        text-align: center;
+        opacity: 1;
+      }
+    }
+  }
+
+  .project5 {
+    position: relative;
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        font-size: 1.875rem;
+        color: #fefaf4;
+        text-align: center;
+        opacity: 1;
+      }
+    }
+  }
+
+  .project6 {
+    position: relative;
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+    overflow: hidden;
+
+    &:hover {
+      .overlay {
+        font-size: 1.875rem;
+        color: #fefaf4;
+        text-align: center;
+        opacity: 1;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    max-width: 28.125rem;
+    height: auto;
+  }
+  @media (width <= 62.5rem) {
+    grid-template-columns: 1fr;
+
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6 {
+      grid-column: span 1;
+      max-width: 100%;
+      padding-inline: 1.875rem;
+    }
+  }
+}
